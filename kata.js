@@ -37,6 +37,17 @@ module.exports = {
         var expensiveDeal = Math.max.apply(null, calculateDealPerAvo).toFixed(2);
         console.log(expensiveDeal);
         return expensiveDeal;
+      },
+      findAveragePrice : function(calculateDealPerAvo) {
+        var average = 0;
+        var total = 0;
+        for (var i = 0; i < calculateDealPerAvo.length; i++) {
+          var price = parseInt(calculateDealPerAvo[i]);
+          total+= price;
+        }
+        average = total / calculateDealPerAvo.length;
+        console.log(average);
+        return average;
       }
 
 

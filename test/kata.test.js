@@ -52,6 +52,9 @@ describe('The kata function', function() {
     it('It should return expensive deal of avo', function() {
         assert.deepEqual('3.50', kata.findExpensiveDeal(['3.00', '3.50', '2.90', '3.33']))
     });
+    it('It should return average across all deals of avo', function() {
+        assert.deepEqual(2.75, kata.findAveragePrice(['3.00', '3.50', '2.90', '3.33']))
+    });
 });
 
 
