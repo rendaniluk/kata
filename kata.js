@@ -28,27 +28,25 @@ module.exports = {
         console.log(deals);
         return deals;
     },
-  findCheapestDeal: function(calculateDealPerAvo) {
-    var cheapestDeal = Math.min.apply(null, calculateDealPerAvo).toFixed(2);
-    console.log(cheapestDeal);
-    return cheapestDeal;
-  },
+    findCheapestDeal: function(calculateDealPerAvo) {
+        var cheapestDeal = Math.min.apply(null, calculateDealPerAvo).toFixed(2);
+        console.log(cheapestDeal);
+        return cheapestDeal;
+    },
     findExpensiveDeal: function(calculateDealPerAvo) {
         var expensiveDeal = Math.max.apply(null, calculateDealPerAvo).toFixed(2);
         console.log(expensiveDeal);
         return expensiveDeal;
-      },
-      findAveragePrice : function(calculateDealPerAvo) {
+    },
+    findAveragePrice: function(calculateDealPerAvo) {
         var average = 0;
         var total = 0;
         for (var i = 0; i < calculateDealPerAvo.length; i++) {
-          var price = parseInt(calculateDealPerAvo[i]);
-          total+= price;
+            var price = parseInt(calculateDealPerAvo[i]);
+            total += price;
         }
         average = total / calculateDealPerAvo.length;
         console.log(average);
         return average;
-      }
-
-
+    }
 };

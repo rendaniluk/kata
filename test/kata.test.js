@@ -47,7 +47,7 @@ describe('The kata function', function() {
         ]))
     });
     it('It should return cheapest deal of avo', function() {
-        assert.deepEqual('2.90', kata.findCheapestDeal(['3.00', '3.50', '2.90', '3.33']))
+        assert.deepEqual(2.90, kata.findCheapestDeal(['3.00', '3.50', '2.90', '3.33']))
     });
     it('It should return expensive deal of avo', function() {
         assert.deepEqual('3.50', kata.findExpensiveDeal(['3.00', '3.50', '2.90', '3.33']))
@@ -56,17 +56,3 @@ describe('The kata function', function() {
         assert.deepEqual(2.75, kata.findAveragePrice(['3.00', '3.50', '2.90', '3.33']))
     });
 });
-
-
-// getPrice(deal);
-//
-// var deals = getDeals('');
-//
-// function dealsWithPrice(deals){
-//
-//   // over deals
-//   getPrice(deal)
-//
-// }
-//
-// var dealWithPrice = dealsWithPrice(deals);
